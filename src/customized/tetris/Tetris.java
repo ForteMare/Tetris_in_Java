@@ -1,15 +1,11 @@
 package customized.tetris;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Point;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.Collections;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 public class Tetris extends JPanel {
 
@@ -73,14 +69,12 @@ public class Tetris extends JPanel {
             }
     };
 
-    private final Color[] tetraminoColors = {
-            Color.cyan, Color.blue, Color.orange, Color.yellow, Color.green, Color.pink, Color.red
-    };
+    private final Color[] tetraminoColors = {Color.cyan, Color.blue, Color.orange, Color.yellow, Color.green, Color.pink, Color.red};
 
     private Point pieceOrigin;
     private int currentPiece;
     private int rotation;
-    private ArrayList<Integer> nextPieces = new ArrayList<Integer>();
+    private ArrayList<Integer> nextPieces = new ArrayList<>();
 
     private long score;
     private Color[][] well;
